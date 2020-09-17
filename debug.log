@@ -1,0 +1,1 @@
+[0829/032729.105:FATAL:scoped_handle.cc(28)] Check failed: . CloseHandle: The handle is invalid. (0x6)
