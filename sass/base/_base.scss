@@ -1,0 +1,26 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+    box-sizing: inherit;
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    @include respond(tab-land){
+        font-size:56.25% ;
+    }
+    @include respond(tab-port){
+        font-size:50% ;
+    }
+}
+body{
+    box-sizing: border-box;
+}
+
+::selection{
+    background-color: $color-primary;
+    color: $color-white;
+}
