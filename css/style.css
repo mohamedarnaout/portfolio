@@ -20,7 +20,7 @@ nav {
 }
 ul {
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
   margin: 0;
   padding: 0 200px;
   list-style-type: none;
@@ -55,10 +55,10 @@ li a:hover{
   color: #fff;
 }
 #header{
-    background: url(pics/pexels-pixabay-434337.jpg) center center / cover no-repeat;
+    background: url(../pics/pexels-pixabay-434337.jpg) center center / cover no-repeat;
     color: #000;
     width: 100%;
-    height: 700px;
+    height: 100vh;
     padding: 0 ;
 }
 .header-text{
@@ -141,7 +141,10 @@ li a:hover{
   text-decoration: none;
   color: #000;
 }
-.item a:hover{
+.item:hover{
+  transform: translateY(-3px);
+}
+.item:hover a{
   color: #0ff;
   text-decoration: underline;
   font-size: 21px;
