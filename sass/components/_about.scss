@@ -3,6 +3,9 @@
     margin: 0 25rem;
     display: flex;
     align-items: center;
+    @include respond(tab-land) {
+      flex-direction: column;
+    }
   }
   &__shape {
     width: 25rem;
