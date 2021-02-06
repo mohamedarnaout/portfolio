@@ -1,17 +1,19 @@
 .header {
-  background: url(../pics/pexels-pixabay-434337.jpg) center center / cover
-    no-repeat;
+  background: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.5),
+      rgba($color-primary-dark, 0.5)
+    ),
+    url(../pics/pexels-pixabay-434337.jpg) center center / cover no-repeat;
+  clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
   color: #000;
-  height: 100vh;
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .header__text {
-  padding-top: 50rem;
-  text-align: center;
   font-size: 2.5rem;
-}
-.header__text p,
-.header__text h1 {
-  margin: 0 0 0.5rem 0;
 }
 .header__text--name {
   font-size: 5rem;

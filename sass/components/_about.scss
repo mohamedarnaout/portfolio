@@ -1,0 +1,49 @@
+.about {
+  &__body {
+    margin: 0 25rem;
+    display: flex;
+    align-items: center;
+  }
+  &__shape {
+    width: 25rem;
+    height: 25rem;
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: translateX(-3rem);
+    position: relative;
+  }
+  &__caption {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    color: $color-white;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.5s;
+    backface-visibility: hidden;
+  }
+  &__img:hover + &__caption {
+    opacity: 1;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__img {
+    height: 100%;
+    transform: translateX(4rem) scale(1.4);
+    backface-visibility: hidden;
+    transition: all 0.5s;
+
+    &:hover {
+      transform: translateX(0.2rem) scale(1);
+      filter: blur(3px) brightness(80%);
+    }
+  }
+
+  &__text {
+    line-height: 2;
+    font-size: 2.2rem;
+  }
+}

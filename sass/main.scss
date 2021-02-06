@@ -14,68 +14,13 @@
 @import "components/form";
 @import "components/feature-box";
 @import "components/popup";
-@import "components/story";
+@import "components/about";
 
 @import "layout/footer";
-@import "layout/grid";
 @import "layout/header";
 @import "layout/navigation";
 
 @import "pages/home";
-
-.bg-green {
-  background: linear-gradient(
-    to right bottom,
-    $color-primary-light,
-    $color-primary-dark
-  );
-  color: #000;
-}
-#About {
-  display: flex;
-  flex-direction: column;
-  height: auto;
-}
-.about {
-  text-align: center;
-  margin: 5rem 20rem 0 20rem;
-  font-size: 2.5rem;
-}
-.body {
-  display: flex;
-  margin: 0 20rem 5rem 20rem;
-  flex-direction: row;
-}
-.body p {
-  align-self: center;
-  margin-left: 1rem;
-  line-height: 2em;
-  font-size: 2rem;
-}
-#personalpic {
-  width: 30rem;
-  height: auto;
-  border-radius: 50%;
-}
-#Skills {
-  display: flex;
-  flex-direction: column;
-  height: auto;
-}
-.logo-pic {
-  width: 20rem;
-  height: 20rem;
-}
-.project-pic {
-  width: 50rem;
-  height: 30rem;
-}
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 30%;
-  text-align: center;
-}
 .gridp {
   display: grid;
   grid-template-columns: repeat(2, 2fr);
@@ -84,6 +29,10 @@
   grid-column-gap: 50%;
   grid-row-gap: 2rem;
   text-align: center;
+}
+.project-pic {
+  width: 50rem;
+  height: 30rem;
 }
 .item {
   padding: 0 0 0.5rem 0;

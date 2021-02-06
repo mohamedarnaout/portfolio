@@ -3,9 +3,9 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding-top: 1.5rem;
-  padding-bottom: 1rem;
-  transition: background 500ms;
+  padding-top: 3rem;
+  transition: background 0.5s;
+  z-index: 1;
   &__list {
     display: flex;
     align-items: center;
@@ -15,13 +15,13 @@
   }
   &__link {
     padding: 0rem 2.5rem;
-    color: #000;
+    color: $color-black;
     font-size: 2.5rem;
     text-decoration: none;
     &:hover {
       font-size: 3.2rem;
       text-decoration: underline;
-      text-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.5);
+      text-shadow: 0 2rem 4rem rgba($color-black, 0.5);
     }
   }
 }
@@ -38,14 +38,17 @@
 //class added when scrolling
 .scrolled {
   background-color: $color-primary-dark;
-  transition: background 500ms;
-  .navigation__link {
-    color: white;
-    &:hover {
-      font-size: 2.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 0;
+  .navigation {
+    &__link {
+      color: white;
+      &:hover {
+        font-size: 2.5rem;
+      }
     }
-  }
-  .navigation__name--hov:hover {
-    font-size: 3.5rem;
+    &__name--hov:hover {
+      font-size: 3.5rem;
+    }
   }
 }

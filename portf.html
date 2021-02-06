@@ -16,46 +16,58 @@
         <li class="navigation__item"><a href="#Contact" class="navigation__link">Contact</a></li>
       </ul>
     </nav>
-    <header class="header" id="header">
-      <div class="header__text">
-           <h1 class="heading__1">Hello, My name is <span class="header__text--name">Mohamed</span>.</h1>
+    <header class="header u-margin-bottom-big" id="header">
+      <div class="header__text u-center-text">
+           <h1 class="heading__1 ">Hello, My name is <span class="header__text--name">Mohamed</span>.</h1>
            <p>I am a Frontend Web Developer.</p>
       </div>
     </header>
-    <section id="About">
-      <div class="about"><h1>About</h1></div>
-      <div class="body"><img src="pics/personal.jpeg" alt="personal picture" id="personalpic">
-      <p>           I'm looking out for a great team of passionate individuals I can work with to build digital products that will impact people lives. I belive of not letting a day pass without continuosly
-         learning new things in this fast changing industry.
+    <main>
+    <section id="About" class="about u-margin-bottom-big">
+      <div class="u-center-text u-margin-bottom-big">
+        <h2 class="heading__2">
+         About
+        </h2>
+    </div>
+      <div class="about__body">
+        <figure class="about__shape">
+          <img src="pics/personal.jpeg" alt="personal picture" class="about__img">
+          <figcaption class="about__caption">Mohamed Arnaout</figcaption>
+        </figure>
+      <p class="about__text"> I'm looking out for a great team of passionate individuals 
+                              I can work with to build digital products that will impact people lives. 
+                              I belive of not letting a day pass without continuosly
+                              learning new things in this fast changing industry.
       </p>
-      <div>
+    </div>
     </section>
-    <section id="Skills" class="bg-green">
-        <div class="about u-margin-bottom-big">
-          <h1>Frontend Skills</h1>
+    <section id="Skills" class="Skill bg-green u-margin-bottom-big">
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading__2">Frontend Skills</h2>
         </div>
         <div class="body">
           <div class="grid">
-            <div>
+            <figure>
               <img src="pics/html5.png" alt="" class="logo-pic">
-              <h3 class="heading__3">HTML5</h3>
-            </div><div>
+              <figcaption class="heading__3">HTML5</figcaption>
+            </figure>
+            <figure>
               <img src="pics/css3.png" alt="" class="logo-pic">
-              <h3 class="heading__3">CSS3</h3>
-            </div><div>
+              <figcaption class="heading__3">CSS3</figcaption>
+            </figure>
+            <figure>
               <img src="pics/JS.png" alt="" class="logo-pic">
-              <h3 class="heading__3">JavaScript</h3>
-            </div><div>
-              <img src="pics/Bootstrap.png" alt="" class="logo-pic">
-              <h3 class="heading__3">BootStrap</h3>
-            </div>
+              <figcaption class="heading__3">JavaScript</figcaption>
+            </figure>
           </div>
         </div>
     </section>
     <section id="Work" >
-      <div class="about">
-        <h1>Work</h1>
-      </div>
+      <div class="u-center-text u-margin-bottom-big">
+        <h2 class="heading__2">
+         Work
+        </h2>
+    </div>
       <div class="body">
         <div class="gridp">
           <div class="item"><a href="file:///C:/Users/gohan/OneDrive/Documents/Desktop/WD/DOM/Color%20Game%202/Color%20Game.html" target="_blank">
@@ -74,12 +86,13 @@
         </div>
       </div>
     </section>
-    <section id="Contact" class="bg-green">
+  </main>
+    <footer id="Contact" class="bg-green">
       <div class="about"><h1>Contacts</h1></div>
       <div class="body">
         
       <div>
-    </section>
+    </footer>
     <script src="js/app.js"></script>
 </body>
 </html>

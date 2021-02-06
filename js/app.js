@@ -1,12 +1,11 @@
-let nav = document.querySelector("nav");
-let intFrameHeight = window.innerHeight;
+let nav = document.querySelector(".navigation");
+let intFrameHeight = window.innerHeight - 100;
 
-
-window.addEventListener('scroll', ()=>{
-    const scroll = window.scrollY;
-    if(scroll >= intFrameHeight){
-        nav.classList.add('scrolled');
-    } else {
-        nav.classList.remove('scrolled');
-    }
-})
+window.addEventListener("scroll", () => {
+  const scroll = window.scrollY;
+  if (scroll >= intFrameHeight) {
+    nav.classList.add("scrolled");
+  } else {
+    nav.classList.remove("scrolled");
+  }
+});

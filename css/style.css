@@ -45,7 +45,8 @@ html {
       font-size: 50%; } }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 3rem; }
 
 ::selection {
   background-color: #006d24;
@@ -55,7 +56,14 @@ body {
   font-size: 5rem; }
 
 .heading__2 {
-  font-size: 3.75rem; }
+  font-size: 3.75rem;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  transition: all 0.2s; }
+  .heading__2:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
 .heading__3 {
   font-size: 2.5rem; }
@@ -99,19 +107,80 @@ body {
 .justify-start {
   margin-right: auto; }
 
+.bg-green {
+  background: linear-gradient(to right bottom, #6fd585, #040);
+  color: #000; }
+
+.Skill {
+  display: flex;
+  flex-direction: column;
+  height: auto; }
+
+.logo-pic {
+  width: 20rem;
+  height: 20rem; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30%;
+  text-align: center; }
+
+.about__body {
+  margin: 0 25rem;
+  display: flex;
+  align-items: center; }
+
+.about__shape {
+  width: 25rem;
+  height: 25rem;
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+  transform: translateX(-3rem);
+  position: relative; }
+
+.about__caption {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.5s;
+  backface-visibility: hidden; }
+
+.about__img:hover + .about__caption {
+  opacity: 1;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+
+.about__img {
+  height: 100%;
+  transform: translateX(4rem) scale(1.4);
+  backface-visibility: hidden;
+  transition: all 0.5s; }
+  .about__img:hover {
+    transform: translateX(0.2rem) scale(1);
+    filter: blur(3px) brightness(80%); }
+
+.about__text {
+  line-height: 2;
+  font-size: 2.2rem; }
+
 .header {
-  background: url(../pics/pexels-pixabay-434337.jpg) center center/cover no-repeat;
+  background: linear-gradient(to right bottom, rgba(111, 213, 133, 0.5), rgba(0, 68, 0, 0.5)), url(../pics/pexels-pixabay-434337.jpg) center center/cover no-repeat;
+  clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
   color: #000;
-  height: 100vh; }
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .header__text {
-  padding-top: 50rem;
-  text-align: center;
   font-size: 2.5rem; }
-
-.header__text p,
-.header__text h1 {
-  margin: 0 0 0.5rem 0; }
 
 .header__text--name {
   font-size: 5rem;
@@ -123,9 +192,9 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  padding-top: 1.5rem;
-  padding-bottom: 1rem;
-  transition: background 500ms; }
+  padding-top: 3rem;
+  transition: background 0.5s;
+  z-index: 1; }
   .navigation__list {
     display: flex;
     align-items: center;
@@ -152,62 +221,14 @@ body {
 
 .scrolled {
   background-color: #040;
-  transition: background 500ms; }
+  padding-top: 1.5rem;
+  padding-bottom: 0; }
   .scrolled .navigation__link {
     color: white; }
     .scrolled .navigation__link:hover {
       font-size: 2.5rem; }
   .scrolled .navigation__name--hov:hover {
     font-size: 3.5rem; }
-
-.bg-green {
-  background: linear-gradient(to right bottom, #6fd585, #040);
-  color: #000; }
-
-#About {
-  display: flex;
-  flex-direction: column;
-  height: auto; }
-
-.about {
-  text-align: center;
-  margin: 5rem 20rem 0 20rem;
-  font-size: 2.5rem; }
-
-.body {
-  display: flex;
-  margin: 0 20rem 5rem 20rem;
-  flex-direction: row; }
-
-.body p {
-  align-self: center;
-  margin-left: 1rem;
-  line-height: 2em;
-  font-size: 2rem; }
-
-#personalpic {
-  width: 30rem;
-  height: auto;
-  border-radius: 50%; }
-
-#Skills {
-  display: flex;
-  flex-direction: column;
-  height: auto; }
-
-.logo-pic {
-  width: 20rem;
-  height: 20rem; }
-
-.project-pic {
-  width: 50rem;
-  height: 30rem; }
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 30%;
-  text-align: center; }
 
 .gridp {
   display: grid;
@@ -217,6 +238,10 @@ body {
   grid-column-gap: 50%;
   grid-row-gap: 2rem;
   text-align: center; }
+
+.project-pic {
+  width: 50rem;
+  height: 30rem; }
 
 .item {
   padding: 0 0 0.5rem 0;
