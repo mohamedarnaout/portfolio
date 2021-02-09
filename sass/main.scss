@@ -9,56 +9,16 @@
 
 @import "components/button";
 @import "components/bg-video";
-@import "components/card";
 @import "components/composition";
 @import "components/form";
 @import "components/feature-box";
 @import "components/popup";
-@import "components/about";
 
 @import "layout/footer";
 @import "layout/header";
 @import "layout/navigation";
+@import "layout/Skills";
+@import "layout/about";
+@import "layout/projects";
 
 @import "pages/home";
-.gridp {
-  display: grid;
-  grid-template-columns: repeat(2, 2fr);
-  grid-template-rows: repeat(2, 1fr);
-  justify-items: start;
-  grid-column-gap: 50%;
-  grid-row-gap: 2rem;
-  text-align: center;
-}
-.project-pic {
-  width: 50rem;
-  height: 30rem;
-}
-.item {
-  padding: 0 0 0.5rem 0;
-  background-color: seagreen;
-}
-.item a {
-  font-size: 1.9rem;
-  text-decoration: none;
-  color: #000;
-}
-.item:hover {
-  transform: translateY(-3px);
-}
-.item:hover a {
-  color: #0ff;
-  text-decoration: underline;
-  font-size: 2.1rem;
-}
-
-#Work {
-  height: auto;
-}
-#Contact {
-  height: 20rem;
-}
-
-.heading-3 {
-  font-size: 2.5rem;
-}

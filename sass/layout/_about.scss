@@ -1,10 +1,14 @@
 .about {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
   &__body {
     margin: 0 25rem;
     display: flex;
     align-items: center;
     @include respond(tab-land) {
       flex-direction: column;
+      margin: 0 5rem;
     }
   }
   &__shape {
@@ -14,6 +18,7 @@
     clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem);
     position: relative;
+    margin-bottom: 5rem;
   }
   &__caption {
     position: absolute;

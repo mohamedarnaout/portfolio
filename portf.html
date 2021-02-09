@@ -1,96 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal portf</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat&display=swap" rel="stylesheet">
-</head>
-<body id="body">
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="body">
     <nav class="navigation">
-    <ul class="navigation__list">
-        <li class="justify-start navigation__item"><a href="#About" class="navigation__name navigation__name--hov navigation__link">Mohamed Arnout</a></li>
-        <li class="navigation__item"><a href="#Skills" class="navigation__link">Skills</a></li>
-        <li class="navigation__item"><a href="#Work" class="navigation__link">Work</a></li>
-        <li class="navigation__item"><a href="#Contact" class="navigation__link">Contact</a></li>
+      <ul class="navigation__list">
+        <li class="justify-start navigation__item">
+          <a
+            href="#About"
+            class="navigation__name navigation__name--hov navigation__link"
+            >Mohamed Arnaout</a
+          >
+        </li>
+        <li class="navigation__item">
+          <a href="#Skills" class="navigation__link">Skills</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#project" class="navigation__link">Work</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#Contact" class="navigation__link">Contact</a>
+        </li>
       </ul>
     </nav>
     <header class="header u-margin-bottom-big" id="header">
       <div class="header__text u-center-text">
-           <h1 class="heading__1 ">Hello, My name is <span class="header__text--name">Mohamed</span>.</h1>
-           <p>I am a Frontend Web Developer.</p>
+        <h1 class="heading__1">
+          Hello, My name is <span class="header__text--name">Mohamed</span>.
+        </h1>
+        <p>I am a Frontend Web Developer.</p>
       </div>
     </header>
     <main>
-    <section id="About" class="about u-margin-bottom-big">
-      <div class="u-center-text u-margin-bottom-big">
-        <h2 class="heading__2">
-         About
-        </h2>
-    </div>
-      <div class="about__body">
-        <figure class="about__shape">
-          <img src="pics/personal.jpeg" alt="personal picture" class="about__img">
-          <figcaption class="about__caption">Mohamed Arnaout</figcaption>
-        </figure>
-      <p class="about__text"> I'm looking out for a great team of passionate individuals 
-                              I can work with to build digital products that will impact people lives. 
-                              I belive of not letting a day pass without continuosly
-                              learning new things in this fast changing industry.
-      </p>
-    </div>
-    </section>
-    <section id="Skills" class="Skill bg-green u-margin-bottom-big">
+      <section id="About" class="about u-margin-bottom-big">
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading__2">About</h2>
+        </div>
+        <div class="about__body">
+          <figure class="about__shape">
+            <img
+              src="pics/personal.jpeg"
+              alt="personal picture"
+              class="about__img"
+            />
+            <figcaption class="about__caption">Mohamed Arnaout</figcaption>
+          </figure>
+          <p class="about__text">
+            I'm looking out for a great team of passionate individuals I can
+            work with to build digital products that will impact people lives. I
+            belive of not letting a day pass without continuosly learning new
+            things in this fast changing industry.
+          </p>
+        </div>
+      </section>
+      <section id="Skills" class="Skill bg-green u-margin-bottom-big">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading__2">Frontend Skills</h2>
         </div>
-          <div class="Skill__flex">
-            <figure>
-              <img src="pics/html5.png" alt="" class="Skill__logo-pic">
-              <figcaption class="heading__3">HTML5</figcaption>
-            </figure>
-            <figure>
-              <img src="pics/css3.png" alt="" class="Skill__logo-pic">
-              <figcaption class="heading__3">CSS3</figcaption>
-            </figure>
-            <figure>
-              <img src="pics/JS.png" alt="" class="Skill__logo-pic">
-              <figcaption class="heading__3">JavaScript</figcaption>
-            </figure>
+        <div class="Skill__flex">
+          <figure>
+            <img src="pics/html5.png" alt="" class="Skill__logo-pic" />
+            <figcaption class="heading__3">HTML5</figcaption>
+          </figure>
+          <figure>
+            <img src="pics/css3.png" alt="" class="Skill__logo-pic" />
+            <figcaption class="heading__3">CSS3</figcaption>
+          </figure>
+          <figure>
+            <img src="pics/JS.png" alt="" class="Skill__logo-pic" />
+            <figcaption class="heading__3">JavaScript</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section id="project" class="project u-margin-bottom-big">
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading__2">Work</h2>
+        </div>
+
+        <div class="project__grid">
+          <div class="project__item">
+            <a
+              href="file:///C:/Users/gohan/OneDrive/Documents/Desktop/WD/DOM/Color%20Game%202/Color%20Game.html"
+              target="_blank"
+            >
+              <img src="pics/colorgame.PNG" alt="" class="project-pic" />
+              <h3>Color Game</h3></a
+            >
           </div>
-    </section>
-    <section id="Work" >
+          <div class="project__item">
+            <a
+              href="file:///C:/Users/gohan/OneDrive/Documents/Desktop/WD/Tribute%20Page/tribute.html"
+              target="_blank"
+            >
+              <img src="pics/tribute.PNG" alt="" class="project-pic" />
+              <h3>Tribute</h3></a
+            >
+          </div>
+          <div class="project__item">
+            <a
+              href="file:///C:/Users/gohan/OneDrive/Documents/Desktop/WD/formfcc/form.html"
+              target="_blank"
+            >
+              <img src="pics/survey.PNG" alt="" class="project-pic" />
+              <h3>Survey</h3></a
+            >
+          </div>
+          <div class="project__item">
+            <a
+              href="file:///C:/Users/gohan/OneDrive/Documents/Desktop/WD/todolist/todolist.html"
+              target="_blank"
+            >
+              <img src="pics/todo.PNG" alt="" class="project-pic" />
+              <h3>ToDoList</h3></a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="Contact" class="bg-green Contact">
       <div class="u-center-text u-margin-bottom-big">
-        <h2 class="heading__2">
-         Work
-        </h2>
-    </div>
-      
-        <!-- <div class="gridp">
-          <div class="item"><a href="file:///C:/Users/gohan/OneDrive/Documents/Desktop/WD/DOM/Color%20Game%202/Color%20Game.html" target="_blank">
-            <img src="pics/colorgame.PNG" alt="" class="project-pic">
-            <h3>Color Game</h3></a>
-          </div><div class="item"><a href="file:///C:/Users/gohan/OneDrive/Documents/Desktop/WD/Tribute%20Page/tribute.html" target="_blank">
-            <img src="pics/tribute.PNG" alt="" class="project-pic">
-            <h3>Tribute</h3></a>
-          </div><div class="item"><a href="file:///C:/Users/gohan/OneDrive/Documents/Desktop/WD/formfcc/form.html" target="_blank">
-            <img src="pics/survey.PNG" alt="" class="project-pic">
-            <h3>Survey</h3></a>
-          </div><div class="item"><div class="item"><a href="file:///C:/Users/gohan/OneDrive/Documents/Desktop/WD/todolist/todolist.html" target="_blank">
-            <img src="pics/todo.PNG" alt="" class="project-pic">
-            <h3>ToDoList</h3></a>
-          </div>
-        </div> -->
-      
-    </section>
-  </main>
-    <footer id="Contact" class="bg-green">
-      <div class="about"><h1>Contacts</h1></div>
-      <div class="body">
-        
-      <div>
+        <h2 class="heading__2">Contacts</h2>
+      </div>
     </footer>
     <script src="js/app.js"></script>
-</body>
+  </body>
 </html>
