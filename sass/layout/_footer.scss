@@ -1,4 +1,19 @@
 .Contact {
-  height: 50rem;
+  height: auto;
   padding: 7.5rem 0;
+  &__flex {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__icon {
+    margin: 0 2rem;
+    height: 6rem;
+    width: 6rem;
+    color: $color-black;
+    transition: color 0.3s;
+    &:hover {
+      color: $color-white;
+    }
+  }
 }

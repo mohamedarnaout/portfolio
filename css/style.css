@@ -112,8 +112,19 @@ body {
   color: #000; }
 
 .Contact {
-  height: 50rem;
+  height: auto;
   padding: 7.5rem 0; }
+  .Contact__flex {
+    display: flex;
+    justify-content: center; }
+  .Contact__icon {
+    margin: 0 2rem;
+    height: 6rem;
+    width: 6rem;
+    color: #000;
+    transition: color 0.3s; }
+    .Contact__icon:hover {
+      color: #fff; }
 
 .header {
   background: linear-gradient(to right bottom, rgba(111, 213, 133, 0.5), rgba(0, 68, 0, 0.5)), url(../pics/pexels-pixabay-434337.jpg) center center/cover no-repeat;
@@ -217,6 +228,9 @@ body {
     transform: translateX(-3rem);
     position: relative;
     margin-bottom: 5rem; }
+    @media only screen and (max-width: 75em) {
+      .about__shape {
+        transform: translateX(0rem); } }
   .about__caption {
     position: absolute;
     top: 80%;
@@ -244,6 +258,9 @@ body {
   .about__text {
     line-height: 2;
     font-size: 2.2rem; }
+    @media only screen and (max-width: 75em) {
+      .about__text {
+        text-align: center; } }
 
 .project {
   height: auto; }
