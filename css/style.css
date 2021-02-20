@@ -47,6 +47,9 @@ html {
 body {
   box-sizing: border-box;
   padding: 3rem; }
+  @media only screen and (max-width: 56.25em) {
+    body {
+      overflow-x: hidden; } }
 
 ::selection {
   background-color: #006d24;
@@ -144,6 +147,8 @@ body {
   color: #006d24; }
 
 .navigation {
+  display: flex;
+  align-items: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -151,20 +156,40 @@ body {
   padding-top: 3rem;
   transition: background 0.5s;
   z-index: 1; }
+  .navigation__item {
+    padding: 0 15rem; }
+    @media only screen and (max-width: 75em) {
+      .navigation__item {
+        padding: 0 10rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .navigation__item {
+        padding: 0 5rem; } }
   .navigation__list {
     display: flex;
     align-items: center;
+    width: auto;
+    justify-content: space-around;
     margin: 0;
-    padding: 0 20rem;
+    padding: 0 15rem;
     list-style-type: none; }
     @media only screen and (max-width: 75em) {
       .navigation__list {
-        padding: 0 15rem; } }
+        padding: 0 10rem; } }
     @media only screen and (max-width: 56.25em) {
       .navigation__list {
         padding: 0 5rem;
+        position: absolute;
+        right: 0;
+        height: 95vh;
+        top: 5vh;
+        width: 50%;
         flex-direction: column;
-        align-items: flex-start; } }
+        align-items: center;
+        transform: translateX(100%);
+        transition: all 0.3s ease-out, transform 0.5s ease-in; } }
+    @media only screen and (max-width: 56.25em) {
+      .navigation__list li {
+        opacity: 0; } }
   .navigation__link {
     padding: 0rem 2.5rem;
     color: #000;
@@ -174,6 +199,22 @@ body {
       font-size: 3.2rem;
       text-decoration: underline;
       text-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.5); }
+  .navigation__burger {
+    cursor: pointer;
+    z-index: 1;
+    display: none; }
+    @media only screen and (max-width: 56.25em) {
+      .navigation__burger {
+        padding: 0 5rem;
+        display: block; } }
+    .navigation__burger div {
+      margin: 0.5rem;
+      width: 2.5rem;
+      height: 0.3rem;
+      background-color: #000;
+      transition: all 0.3s ease; }
+  .navigation-active {
+    transform: translateX(0%); }
 
 .navigation__name {
   font-size: 3.5rem;
@@ -193,6 +234,23 @@ body {
       font-size: 2.5rem; }
   .scrolled .navigation__name--hov:hover {
     font-size: 3.5rem; }
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(5rem); }
+  to {
+    opacity: 1;
+    transform: translateX(0); } }
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 5px); }
+
+.toggle .line2 {
+  opacity: 0; }
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -5px); }
 
 .Skill {
   display: flex;
