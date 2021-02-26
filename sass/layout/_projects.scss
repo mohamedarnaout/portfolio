@@ -1,12 +1,16 @@
 .project {
+  padding: 0 15rem;
   height: auto;
   &__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
-    grid-gap: 2rem;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
+    grid-column-gap: 30rem;
+    grid-row-gap: 3rem;
     text-align: center;
   }
   &-pic {
+    padding-top: 3rem;
     width: 40rem;
     height: 25rem;
   }
@@ -16,7 +20,7 @@
     & a {
       font-size: 1.9rem;
       text-decoration: none;
-      color: #000;
+      color: $color-white;
     }
     &:hover {
       transform: translateY(-3px);
