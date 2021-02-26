@@ -12,15 +12,12 @@
     padding: 0 15rem;
     @include respond(tab-land) {
       padding: 0 10rem;
-      & a {
-        font-size: 3.2rem;
-      }
     }
     @include respond(tab-port) {
       padding: 0 5rem;
-      & a {
-        font-size: 2rem;
-      }
+    }
+    @include respond(phone) {
+      padding: 0 4rem;
     }
   }
   &__list {
@@ -68,7 +65,7 @@
     z-index: 1;
     display: none;
     @include respond(tab-port) {
-      padding: 0 5rem;
+      padding: 1rem 5rem;
       display: block;
     }
     & div {
@@ -88,7 +85,16 @@
   font-size: 3.5rem;
   font-family: Indie Flower;
   color: $color-primary;
-  &--hov:hover {
+  @include respond(tab-land) {
+    font-size: 3rem;
+  }
+  @include respond(tab-port) {
+    font-size: 2.5rem;
+  }
+  @include respond(phone) {
+    font-size: 2.2rem;
+  }
+  &:hover {
     font-size: 3.8rem;
     color: $color-primary-dark;
   }
@@ -105,7 +111,7 @@
         font-size: 2.5rem;
       }
     }
-    &__name--hov:hover {
+    &__name:hover {
       font-size: 3.5rem;
     }
   }

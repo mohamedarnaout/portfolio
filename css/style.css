@@ -160,14 +160,13 @@ body {
     padding: 0 15rem; }
     @media only screen and (max-width: 75em) {
       .navigation__item {
-        padding: 0 10rem; }
-        .navigation__item a {
-          font-size: 3.2rem; } }
+        padding: 0 10rem; } }
     @media only screen and (max-width: 56.25em) {
       .navigation__item {
-        padding: 0 5rem; }
-        .navigation__item a {
-          font-size: 2rem; } }
+        padding: 0 5rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .navigation__item {
+        padding: 0 4rem; } }
   .navigation__list {
     display: flex;
     align-items: center;
@@ -209,7 +208,7 @@ body {
     display: none; }
     @media only screen and (max-width: 56.25em) {
       .navigation__burger {
-        padding: 0 5rem;
+        padding: 1rem 5rem;
         display: block; } }
     .navigation__burger div {
       margin: 0.5rem;
@@ -224,7 +223,16 @@ body {
   font-size: 3.5rem;
   font-family: Indie Flower;
   color: #006d24; }
-  .navigation__name--hov:hover {
+  @media only screen and (max-width: 75em) {
+    .navigation__name {
+      font-size: 3rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .navigation__name {
+      font-size: 2.5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .navigation__name {
+      font-size: 2.2rem; } }
+  .navigation__name:hover {
     font-size: 3.8rem;
     color: #040; }
 
@@ -236,7 +244,7 @@ body {
     color: white; }
     .scrolled .navigation__link:hover {
       font-size: 2.5rem; }
-  .scrolled .navigation__name--hov:hover {
+  .scrolled .navigation__name:hover {
     font-size: 3.5rem; }
 
 @keyframes navLinkFade {
