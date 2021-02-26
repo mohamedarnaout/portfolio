@@ -160,10 +160,14 @@ body {
     padding: 0 15rem; }
     @media only screen and (max-width: 75em) {
       .navigation__item {
-        padding: 0 10rem; } }
+        padding: 0 10rem; }
+        .navigation__item a {
+          font-size: 3.2rem; } }
     @media only screen and (max-width: 56.25em) {
       .navigation__item {
-        padding: 0 5rem; } }
+        padding: 0 5rem; }
+        .navigation__item a {
+          font-size: 2rem; } }
   .navigation__list {
     display: flex;
     align-items: center;
