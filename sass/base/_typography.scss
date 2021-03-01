@@ -1,5 +1,9 @@
 .heading__1 {
   font-size: 5rem;
+  animation: moveInLeft 1s ease-out;
+}
+.heading--2 {
+  animation: moveInRight 1s ease-out;
 }
 .heading__2 {
   font-size: 3.75rem;
