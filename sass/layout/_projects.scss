@@ -4,15 +4,15 @@
   &__grid {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
-    grid-column-gap: 30rem;
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    grid-column-gap: 20rem;
     grid-row-gap: 3rem;
     text-align: center;
   }
   &-pic {
     padding-top: 3rem;
-    width: 40rem;
-    height: 25rem;
+    width: 30rem;
+    height: 20rem;
   }
   &__item {
     padding: 0 0 0.5rem 0;
